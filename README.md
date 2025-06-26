@@ -7,6 +7,7 @@ PlatformIO template for uploading and debugging Raspberry Pi Pico series with th
 
 * You should change the `board` if you don't have a Raspberry Pi Pico 2W. (the default - currently available options are 
   `rpipico`, `rpipicow`, `rpipicow2`, and `rpipicow2w` - don't forget to update the [`env:`] part as well!)
+  * You might need to install `https://github.com/maxgerhardt/platform-raspberrypi.git` as a platform first.
 * Change `monitor_port` to the probe's USB serial port.
 * Notice how `Serial1` is used, as `Serial` would be the USB serial port, not that UART pins that the probe would be 
   connected to. (maybe consider [`ArduinoStreamUtils`](https://github.com/bblanchon/ArduinoStreamUtils) if you want it 
